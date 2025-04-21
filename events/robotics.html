@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics - Techfest 2024</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .event-hero {
+            height: 60vh;
+            background-image: url('https://images.unsplash.com/photo-1555244162-803834f70033?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        }
+        .event-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .event-details {
+            background: var(--gray-800);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .timeline {
+            margin: 2rem 0;
+            padding: 0;
+            list-style: none;
+        }
+        .timeline li {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <header class="event-hero hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="animate-scale">Robotics</h1>
+                <p class="animate-fade">Battle of the Bots</p>
+            </div>
+        </header>
+
+        <div class="event-content">
+            <div class="event-details animate-fade">
+                <h2>Event Details</h2>
+                <ul class="timeline">
+                    <li>Registration Opens: March 1, 2024</li>
+                    <li>Event Date: March 16, 2024</li>
+                    <li>Categories: Combat, Line Following, Maze Solving</li>
+                    <li>Prize Pool: $3,000</li>
+                    <li>Team Size: 2-3 members</li>
+                </ul>
+            </div>
+
+            <div class="animate-fade">
+                <h2>About the Event</h2>
+                <p class="mt-4">Experience the thrill of robotics as teams compete in various challenges. From combat robots to autonomous navigation, showcase your engineering prowess and innovative thinking in this action-packed competition.</p>
+            </div>
+
+            <div class="register-form animate-fade" style="margin-top: 4rem;">
+                <input type="email" placeholder="Enter your email to register" class="email-input">
+                <button class="btn-primary">
+                    Register for Robotics
+                    <i data-lucide="notebook" class="icon-sm"></i>
+                </button>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="../index.html" class="btn-primary">
+                    <i data-lucide="arrow-left" class="icon-sm"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>© 2024 College Techfest. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

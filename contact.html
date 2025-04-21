@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Techfest 2024</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .contact-hero {
+            height: 40vh;
+            background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        }
+        .contact-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        .contact-card {
+            background: var(--gray-800);
+            padding: 2rem;
+            border-radius: 1rem;
+            text-align: center;
+        }
+        .contact-form {
+            background: var(--gray-800);
+            padding: 2rem;
+            border-radius: 1rem;
+            margin-top: 3rem;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--gray-400);
+        }
+        .form-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            background: var(--gray-900);
+            border: 1px solid #374151;
+            color: white;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        textarea.form-input {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            color: var(--primary);
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: var(--primary-dark);
+        }
+        .map-container {
+            height: 300px;
+            border-radius: 1rem;
+            overflow: hidden;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <header class="contact-hero hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="animate-scale">Contact Us</h1>
+                <p class="animate-fade">Get in Touch with the Techfest Team</p>
+            </div>
+        </header>
+
+        <div class="contact-section">
+            <div class="contact-grid animate-fade">
+                <div class="contact-card">
+                    <i data-lucide="map-pin" class="icon"></i>
+                    <h3>Location</h3>
+                    <p>Tech University Main Campus<br>123 Innovation Drive<br>Tech City, TC 12345</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i data-lucide="phone" class="icon"></i>
+                    <h3>Phone</h3>
+                    <p>Main Office: (555) 123-4567<br>Event Support: (555) 987-6543</p>
+                </div>
+                
+                <div class="contact-card">
+                    <i data-lucide="mail" class="icon"></i>
+                    <h3>Email</h3>
+                    <p>info@techfest2024.com<br>support@techfest2024.com</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="facebook" class="icon-sm"></i></a>
+                        <a href="#"><i data-lucide="twitter" class="icon-sm"></i></a>
+                        <a href="#"><i data-lucide="instagram" class="icon-sm"></i></a>
+                        <a href="#"><i data-lucide="linkedin" class="icon-sm"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form animate-fade">
+                <h2 class="text-2xl font-bold mb-6">Send us a Message</h2>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-input" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">
+                    Send Message
+                    <i data-lucide="send" class="icon-sm"></i>
+                </button>
+            </form>
+
+            <div class="map-container animate-fade">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1!2d-73.985!3d40.748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMCc0OC4wIk4gNzPCsDU5JzA2LjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="index.html" class="btn-primary">
+                    <i data-lucide="arrow-left" class="icon-sm"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>© 2024 College Techfest. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

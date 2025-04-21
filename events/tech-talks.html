@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Talks - Techfest 2024</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .event-hero {
+            height: 60vh;
+            background-image: url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+        }
+        .event-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+        .event-details {
+            background: var(--gray-800);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+        .timeline {
+            margin: 2rem 0;
+            padding: 0;
+            list-style: none;
+        }
+        .timeline li {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+            position: relative;
+        }
+        .timeline li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+        .speakers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .speaker-card {
+            background: var(--gray-800);
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+        .speaker-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <header class="event-hero hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="animate-scale">Tech Talks</h1>
+                <p class="animate-fade">Insights from Industry Leaders</p>
+            </div>
+        </header>
+
+        <div class="event-content">
+            <div class="event-details animate-fade">
+                <h2>Event Details</h2>
+                <ul class="timeline">
+                    <li>Date: March 17, 2024</li>
+                    <li>Time: 10:00 AM - 5:00 PM</li>
+                    <li>Venue: Main Auditorium</li>
+                    <li>Topics: AI/ML, Web3, Cloud Computing</li>
+                    <li>Format: Keynotes & Panel Discussions</li>
+                </ul>
+            </div>
+
+            <div class="animate-fade">
+                <h2>Featured Speakers</h2>
+                <div class="speakers-grid">
+                    <div class="speaker-card">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Speaker 1">
+                        <h3>John Doe</h3>
+                        <p>AI Research Lead, Tech Corp</p>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Speaker 2">
+                        <h3>Jane Smith</h3>
+                        <p>CTO, Future Labs</p>
+                    </div>
+                    <div class="speaker-card">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Speaker 3">
+                        <h3>Mike Johnson</h3>
+                        <p>Web3 Expert, Blockchain Inc</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="register-form animate-fade" style="margin-top: 4rem;">
+                <input type="email" placeholder="Enter your email to register" class="email-input">
+                <button class="btn-primary">
+                    Register for Tech Talks
+                    <i data-lucide="cpu" class="icon-sm"></i>
+                </button>
+            </div>
+
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="../index.html" class="btn-primary">
+                    <i data-lucide="arrow-left" class="icon-sm"></i>
+                    Back to Home
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>© 2024 College Techfest. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>
