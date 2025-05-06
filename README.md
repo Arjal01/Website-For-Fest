@@ -24,4 +24,14 @@ CSS3 / SCSS
 JavaScript
 
 
+📬 Want to Contribute?
+If you’ve improved the design, added new features, or want to make it easier for others to customize, feel free to open a pull request or start a discussion!
 
+📄 License
+This project is open source under the MIT License.
+
+🙌 Acknowledgements
+Thanks to all open-source tools and libraries used in this project.
+
+
+For a Quick review You can use this link to see the website :- 
