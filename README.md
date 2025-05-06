@@ -34,4 +34,4 @@ This project is open source under the MIT License.
 Thanks to all open-source tools and libraries used in this project.
 
 
-For a Quick review You can use this link to see the website :- 
+For a Quick review You can use this link to see the website :- https://tech-fest-2025.netlify.app/
